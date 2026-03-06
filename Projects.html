@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | INCENTER</title>
+    <link rel="icon" type="image/x-icon" href="INCENTER - Copy.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* 1. القواعد اللونية (Brand Identity) */
+        :root {
+            --primary-gold: #d4af37;
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --text-dark: #2d3436;
+            --shadow: 0 8px 30px rgba(0,0,0,0.08);
+            --transition: 0.3s ease-in-out;
+        }
+
+        body {
+            background: #fdfaf5;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+         body {
+            background: #fdfaf5 url('https://www.transparenttextures.com/patterns/cubes.png'); /* خلفية هادئة ومنقوشة احترافية */
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 2. الهيدر (Bar العلوي الثابت) */
+        .main-header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            padding: 15px 25px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+        }
+
+        .logo-section { display: flex; align-items: center; gap: 15px; }
+        .logo-section img { width: 45px; height: 45px; border-radius: 50%; border: 2px solid var(--primary-gold); object-fit: cover; }
+        .logo-section h2 { margin: 0; font-size: 1.2rem; letter-spacing: 1px; }
+
+        /* 3. نظام الشبكة للمشاريع (CSS Grid) */
+        .projects-grid {
+            display: grid;
+            /* إنشاء أعمدة مرنة: بحد أدنى 280 بكسل لكل بطاقة */
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* 4. بطاقة المشروع (Project Card) */
+        .project-link {
+            text-decoration: none; /* لإزالة الخط تحت الرابط */
+            color: inherit;
+            display: block;
+        }
+
+        .project-card {
+            background: var(--glass-bg);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid white;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            cursor: pointer;
+        }
+
+        .project-card i {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            margin: 10px 0;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+        }
+
+        /* تأثيرات التحويم (Hover) */
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-gold);
+            background: #ffffff;
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.15);
+        }
+
+        /* بطاقة "قريباً" */
+        .placeholder-card {
+            opacity: 0.6;
+            border: 2px dashed #ccc;
+            background: rgba(0,0,0,0.02);
+        }
+
+        /* 5. التجاوب */
+        @media (max-width: 768px) {
+            .main-header { flex-direction: column; gap: 10px; }
+            .projects-grid { grid-template-columns: 1fr; } /* عمود واحد في الجوال */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="INCENTER.jpeg" alt="Logo">
+            <h2>INCENTER</h2>
+        </div>
+        <div class="nav-info">لوحة تحكم المشاريع</div>
+    </header>
+
+    <main class="projects-grid">
+        
+        <a href="Project1.html" class="project-link">
+            <article class="project-card">
+                <i class="fas fa-folder-open"></i>
+                <h3>مشروع AAe</h3>
+                <span style="font-size: 0.8rem; color: #888;">إضغط لفتح الملف</span>
+            </article>
+        </a>
+
+        <article class="project-card placeholder-card">
+            <i class="fas fa-plus-circle" style="color: #ccc;"></i>
+            <h3>مشروع جديد</h3>
+            <p>قيد التطوير...</p>
+        </article>
+
+        <article class="project-card placeholder-card">
+            <i class="fas fa-plus-circle" style="color: #ccc;"></i>
+            <h3>مشروع جديد</h3>
+            <p>قيد التطوير...</p>
+        </article>
+
+    </main>
+</div>
+
+</body>
+</html>

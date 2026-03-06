@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المركز المختلط | Agadir</title>
+    <link rel="icon" type="image/x-icon" href="INCENTER - Copy.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/jpeg" href="1000018164.jpg">
+    
+    <style>
+        :root {
+            --gold: #d4af37;
+            --glass: rgba(255, 255, 255, 0.9);
+            --text: #2d3436;
+            --shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #fdfaf5 url('https://www.transparenttextures.com/patterns/cubes.png'); /* خلفية هادئة ومنقوشة احترافية */
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* هيدر المنصة */
+        header {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .brand { display: flex; align-items: center; gap: 15px; }
+        .brand img { width: 55px; border-radius: 50%; border: 2px solid var(--gold); }
+        .brand h1 { font-size: 1.4rem; }
+
+        /* منطقة التواصل الاجتماعي */
+        .social-bar {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .social-bar p { font-size: 0.9rem; margin-bottom: 10px; font-weight: bold; color: var(--gold); }
+        .social-links { display: flex; justify-content: center; gap: 20px; }
+        .social-links a { 
+            text-decoration: none; color: white; padding: 10px 25px; 
+            border-radius: 50px; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;
+            transition: 0.3s;
+        }
+        .fb { background: #1877F2; }
+        .ig { background: #E1306C; }
+
+        /* شبكة المحتوى (أخبار المركز) */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* تصميم المنشور الموحد (نص، صورة، أو فيديو) */
+        .post-card {
+            background: var(--glass);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            border: 1px solid white;
+            transition: 0.3s;
+        }
+
+        .post-card:hover { transform: translateY(-5px); }
+
+        .post-tag {
+            background: var(--gold);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .post-card h2 { font-size: 1.25rem; margin-bottom: 10px; color: #000; }
+        .post-card p { color: #555; margin-bottom: 15px; }
+
+        /* حاوية الوسائط (فيديو أو صور) */
+        .media-container {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #eee;
+            margin-top: 10px;
+        }
+
+        .media-container img, .media-container video {
+            width: 100%;
+            display: block;
+        }
+
+        /* --- إعدادات الهواتف --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; gap: 15px; }
+            .brand { flex-direction: column; }
+            .social-links { flex-direction: row; gap: 10px; }
+            .social-links a { padding: 8px 15px; font-size: 0.8rem; }
+            .post-card { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="brand">
+            <img src="INCENTER.jpeg" alt="Logo">
+            <h1>المركز المختلط أكادير</h1>
+        </div>
+        <div style="font-size: 0.9rem; font-weight: bold; color: var(--gold);">
+            INCENTER | فضاء الإبداع
+        </div>
+    </header>
+
+    <div class="social-bar">
+        <p>تواصل أيضاً معنا على :</p>
+        <div class="social-links">
+            <a href="https://www.bing.com/ck/a?!&&p=7b5e9f984ea9bb0a5c31e7e0e7a09dae74656707e3a3d3d4e0d0e9c52d6a6e39JmltdHM9MTc3MjY2ODgwMA&ptn=3&ver=2&hsh=4&fclid=1812a785-9c23-64af-2bb2-b1789db96505&psq=center+mixte+agadir&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Blb3BsZS9DZW50cmUtTWl4dGUtZGUtRm9ybWF0aW9uLVByb2Zlc3Npb25uZWxsZS1BZ2FkaXIvMTAwMDcwNTczNzYxNjYzLw" class="fb"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.bing.com/ck/a?!&&p=0281d9d00274875691c6f3c572864b8d0aec13f22d47fb91ecca7177368a052fJmltdHM9MTc3MjY2ODgwMA&ptn=3&ver=2&hsh=4&fclid=1812a785-9c23-64af-2bb2-b1789db96505&psq=center+mixte+agadir+instagra&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jbWZwX2FnYWRpci8" class="ig"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <main class="main-content">
+
+        <article class="post-card">
+            <span class="post-tag">إعلان</span>
+            <h2>ترحيب بالمتدربين الجدد</h2>
+            <p>يرحب المركز المختلط أكادير بجميع المتدربين والشركاء في هذا الفضاء الرقمي الجديد  المخصص لتبادل الأفكار والابتكار.</p>
+        </article>
+
+        <article class="post-card">
+            <span class="post-tag">فيديو</span>
+            <h2>عرض مشاريع AAE DESIGN</h2>
+            <p>شاهدوا ملخص لأحدث التصاميم التي تم تنفيذها داخل المؤسسة لتطوير الفضاء المدرسي.</p>
+            <div class="media-container">
+                <img src="INCENTER.jpeg" alt="AAe">
+            </div>
+        </article>
+
+        <article class="post-card">
+            <span class="post-tag">صور النشاط</span>
+            <h2>ورشة العمل التقنية</h2>
+            <p>جانب من حضور المتدربين في ورشة العمل الخاصة بالبرمجة والتصميم.</p>
+            <div class="media-container">
+                <img src="TEAM.jpg" alt="Activity">
+            </div>
+        </article>
+
+    </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAeProject | INCENTER</title>
+    <link rel="icon" type="image/jpeg" href="INCENTER - Copy.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* 1. القواعد اللونية (Brand Identity) */
+        :root {
+            --primary-gold: #d4af37;
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --text-dark: #2d3436;
+            --shadow: 0 8px 30px rgba(0,0,0,0.08);
+            --transition: 0.3s ease-in-out;
+        }
+
+        /* 2. التنسيق العام للجسم */
+         body {
+            background: #fdfaf5 url('https://www.transparenttextures.com/patterns/cubes.png'); /* خلفية هادئة ومنقوشة احترافية */
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px; /* الحجم المثالي للمكتبي ليظهر INCENTER */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 3. مكون الهيدر (Header Component) */
+        .main-header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .logo-section { display: flex; align-items: center; gap: 15px; }
+        .logo-section img { width: 50px; border-radius: 50%; border: 2px solid var(--primary-gold); }
+
+        /* 4. مكون بطاقة المحتوى (Post/Card Template) */
+        .content-card {
+            background: var(--glass-bg);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+            border: 1px solid white;
+            transition: var(--transition);
+        }
+
+        .content-card:hover { transform: translateY(-5px); }
+
+        .tag {
+            background: var(--primary-gold);
+            color: white;
+            padding: 4px 15px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .media-box {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 15px;
+            background: #f0f0f0;
+        }
+
+        .media-box img, .media-box video { width: 100%; display: block; }
+
+        /* 5. التجاوب مع الهواتف (Responsive Design) */
+        @media (max-width: 768px) {
+            .main-header { flex-direction: column; text-align: center; gap: 15px; }
+            .container { padding: 10px; }
+            .content-card { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="main-header">
+        <div class="logo-section">
+            <img src="INCENTER.jpeg" alt="Logo">
+            <h2>INCENTER Projects</h2>
+        </div>
+    </header>
+
+    <main id="main-feed">
+        
+        <article class="content-card">
+            <span class="tag">فكرة</span>
+            <h3>INCENTER</h3>
+            <p>الشركاء: AAE DESIGN & Centre Mixte Agadir</p>
+        </article>
+
+        <article class="content-card">
+            <span class="tag">الرؤية</span>
+            <h3>رؤية التطبيق لمتدربي Centre Mixte</h3>
+            <p>الوظيفة الحالية: منصة مركزية لعرض المستجدات، استطلاع الآراء بذكاء (Google Forms)، وعرض المشاريع التقنية بأسلوب بصري احترافي يعتمد على "الشفافية والوضوح</p>
+            
+            <p>التمكين: تعطي للمتدربين شعوراً بأن مشاريعهم تُعرض في واجهة عالمية المستوى.</p>
+            
+            <P>المشاركة: تحويل المتدرب من متلقٍ للمعلومة إلى صانع قرار من خلال قسم "اقتراح الأفكار"</P>
+            
+            <P>الهوية: خلق فخر بالانتماء للمركز عبر تصميم يدمج بين شعار المركز وشعار AAE DESIGN كعلامة جودة.</P>
+            <div class="media-box">
+                <img src="INCENTER Projet/1.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/2.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/3.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/4.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/5.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/6.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/7.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/8.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/9.jpeg" alt="Reference Image">
+                <img src="INCENTER Projet/10.jpeg" alt="Reference Image">
+            </div>
+        </article>
+    </main>
+</div>
+
+</body>
+</html>
